@@ -1,5 +1,0 @@
-https://towardsdatascience.com/jupyter-data-science-stack-docker-in-under-15-minutes-19d8f822bd45
-
-https://hub.docker.com/r/jupyter/datascience-notebook/dockerfile
-
-https://github.com/jupyter/docker-stacks

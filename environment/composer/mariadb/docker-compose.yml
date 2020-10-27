@@ -5,14 +5,14 @@ services:
     image: mariadb
     restart: always
     environment:
-      MYSQL_USER: ''
-      MYSQL_PASSWORD: ''
-      MYSQL_ROOT_PASSWORD: ''
+      MYSQL_USER: 'universolimpo'
+      MYSQL_PASSWORD: '0b63fbb35e41b52c5fd330a755fbe06df110a78e948e32b478fdbb84dccf33e88055e0dd446747bdbde98122bd6344f951132d61b618'
+      MYSQL_ROOT_PASSWORD: '0b63fbb35e41b52c5fd330a755fbe06df110a78e948e32b478fdbb84dccf33e88055e0dd446747bdbde98122bd6344f951132d61b618'
     volumes:
-      - 
+      - /data
     ports:
       - 3306:3306
-
+      
   adminer:
     image: adminer
     restart: always

@@ -5,8 +5,8 @@ services:
     image: postgres
     restart: always
     environment: 
-      POSTGRES_USER: ""
-      POSTGRES_PASSWORD: ""
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
     volumes:
       - /data
     ports: 
@@ -16,8 +16,8 @@ services:
   pgadmin:
     image: dpage/pgadmin4
     environment:
-      PGADMIN_DEFAULT_EMAIL: ""
-      PGADMIN_DEFAULT_PASSWORD: ""
+      PGADMIN_DEFAULT_EMAIL: "antonioggaca000@gmail.com"
+      PGADMIN_DEFAULT_PASSWORD: "development"
     ports:
       - "16543:80"
     depends_on:

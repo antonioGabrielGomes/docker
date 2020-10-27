@@ -1,0 +1,12 @@
+mycroft:
+ build: 1eeff7ae5e59
+ 
+ volumes:
+  - /home/antonio/Documents/antonioGabrielGomes-github/docker/environment/mycroftai:/root/.mycroft
+ environment:
+  PULSE_SERVER: unix:${XDG_RUNTIME_DIR}/pulse/native
+
+
+
+
+docker run -d -v $(PWD):/root/.mycroft  --device /dev/snd -e PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native  -v ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native -v ~/.config/pulse/cookie:/root/.config/pulse/cookie  -p 8181:8181 --name mycroft mycroftai/docker-mycroft

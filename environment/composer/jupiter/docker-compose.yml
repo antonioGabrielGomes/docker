@@ -3,7 +3,7 @@ services:
   datascience-notebook:
       image: jupyter/datascience-notebook
       volumes:
-        - /data
+        - /home/antonio/Documents/antonioGabrielGomes-github/PythonFundamentos:/data
       ports:
         - 8888:8888
       container_name:   datascience-notebook-container
